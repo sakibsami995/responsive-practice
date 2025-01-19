@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+}
+/* starting from mobile device  */
+/* sheared style */
+body{
+    font-family: "Poppins", serif;
+    padding: 35px 16px;
+}
+/* navbar style */
+.navbar{
+    
+    max-width: 576px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    
+}
+.nav{
+    list-style: none;
+    padding: 0;
+    
+}
+.drop-nav{
+    list-style: none;
+    padding: 0;
+}
+.drop-nav > li > .nav{
+    display: none;
+}
+.drop-nav li:hover .nav{
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    display: block;
+    box-shadow: 1px 1px 2px 1px rgb(206, 206, 206);
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+#cart{
+    list-style: none;
+}
+.nav-titel{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(58, 58, 58, 1);
+}
+/* banner section */
+.banner{
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.main{
+    width: 200px;
+    margin-bottom: 15px;
+}
+.banner-titel{
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(58, 58, 58, 1);
+}
+.banner-des{
+   font-size: 14px; 
+   font-weight: 500;
+   color: rgba(58, 58, 58, 1);
+   margin-bottom: 15px;
+}
+.btn{
+    padding: 10px 24px;
+    border-radius: 40px;
+    background-color: rgba(224, 44, 109, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Poppins", serif;
+}
+.icon{
+    padding: 0 40px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+.icon-img{
+    width: 80px;
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+    .banner{
+       max-width: 1200px; 
+    }
+    .icon{
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        gap: 50px;
+    }
+    .navbar{
+        max-width: 1200px;
+    }
+}
